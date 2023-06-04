@@ -86,24 +86,30 @@ nav {
 
 .bookmarks > li > a:hover {
   color: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bookmarks > li > a.active,
 .bookmarks > li > a.active:hover {
   color: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bookmarks > li > a.active::after,
 .bookmarks > li > a:hover::after {
   content: "";
   position: absolute;
-  bottom: -26px;
+  bottom: -27px;
   left: 0;
   width: 50%;
   height: 2px;
   background-color: rgba(33, 150, 243, 1);
   border-radius: 5px;
   border-width: 4px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact > li > a {
@@ -116,6 +122,8 @@ nav {
 
 .contact > li > a:hover {
   color: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #icon-smartphone,
@@ -126,10 +134,14 @@ nav {
 
 #icon-envelope:hover {
   fill: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #icon-smartphone:hover {
   fill: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-box {
@@ -271,6 +283,8 @@ main {
 
 .container-icon:hover {
   background-color: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-icon svg {
@@ -339,6 +353,8 @@ main {
   font-weight: bold;
   text-align: center;
   padding: 30px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h2 {
@@ -478,6 +494,8 @@ h2 {
   box-shadow: 0px 11px 17px -5px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 11px 17px -5px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 11px 17px -5px rgba(0, 0, 0, 0.4);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -519,6 +537,8 @@ address {
 
 .contact-footer-mail > li > a:hover {
   color: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer-tel > li > a {
@@ -532,6 +552,8 @@ address {
 
 .contact-footer-tel > li > a:hover {
   color: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-join {
@@ -552,7 +574,6 @@ address {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  transition: fill 0.3s;
 }
 
 .container-icon-footer {
@@ -575,6 +596,8 @@ address {
 
 .container-icon-footer:hover {
   background-color: rgba(33, 150, 243, 1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---- PAGE PORTFOLIO ----*/
@@ -650,12 +673,13 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 150, 243, 0.8); /* Półprzezroczysty kolor tła */
-  transition: bottom 0.3s ease;
+  background-color: rgba(33, 150, 243, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-portfolio span {
