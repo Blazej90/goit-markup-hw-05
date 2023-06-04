@@ -73,6 +73,7 @@ nav {
   font-weight: 500;
   color: rgba(33, 33, 33, 1);
   margin-right: 46px;
+  position: relative;
 }
 
 .bookmarks > li > a:first-child {
@@ -85,6 +86,24 @@ nav {
 
 .bookmarks > li > a:hover {
   color: rgba(33, 150, 243, 1);
+}
+
+.bookmarks > li > a.active,
+.bookmarks > li > a.active:hover {
+  color: rgba(33, 150, 243, 1);
+}
+
+.bookmarks > li > a.active::after,
+.bookmarks > li > a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: rgba(33, 150, 243, 1);
+  border-radius: 5px;
+  border-width: 4px;
 }
 
 .contact > li > a {
@@ -508,7 +527,8 @@ address {
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
   cursor: pointer;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover {
@@ -557,7 +577,8 @@ button:hover {
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .design-img:hover {
